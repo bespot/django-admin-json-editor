@@ -16,7 +16,7 @@ if os.path.exists(version_file):
         version_text = fout.read()
         version = re.compile(r'.*__version__ = \'(.*?)\'', re.S).match(version_text).group(1)
 else:
-    version = 'dev'
+    version = '0.2.0+bespot.1'
 
 # allow setup.py to be run from any path
 os.chdir(project_path)
